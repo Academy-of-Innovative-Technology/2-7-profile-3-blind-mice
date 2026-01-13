@@ -1,5 +1,3 @@
-/* Use the profile below */
-
 var profile = {
     bio: {
         first: "Enjin",
@@ -34,7 +32,7 @@ document.querySelector("#profileName").innerText = profile.bio.first;
 document.querySelector("#profileTitle").innerText = profile.bio.title;
 
 
-document.querySelector("#profileImage").src = "https://www.bootdey.com/img/Content/avatar/avatar7.png";
+document.querySelector("#profileImage").src = "https://ella.janitorai.com/bot-avatars/KU34fefGAyV8DHnzrefgY.webp?width=400";
 
 
 document.querySelector("#facebookLink").href = "https://facebook.com/" + profile.social[0].facebook;
