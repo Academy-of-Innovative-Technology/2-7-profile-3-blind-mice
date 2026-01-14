@@ -83,3 +83,5 @@ profile.skills.forEach(skill => {
         </div>
     `);
 });
+
+//yay//
