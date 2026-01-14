@@ -18,11 +18,16 @@ var profile = {
         role: "Cleaner"
     },
 
-    skills: [
+  skills: [
         { title: "Speed", level: 70 },
         { title: "Strength", level: 90 },
         { title: "Tuition", level: 100 }
-    ]
+    ],
+education: [
+    { title: "Education", description: "None, but has been trained by the Cleaner Master" },
+    { title: "Career Start", description: "After being trained by the Cleaner Master, Enjin was sent to the East Ward to lead team Akuta" },
+    { title: "Experience", description: "Over 10 years of experience in cleaning and fighting Trash Beasts" }
+]
 };
 
 
@@ -30,7 +35,9 @@ var profile = {
 
 document.querySelector("#profileName").innerText = profile.bio.first;
 document.querySelector("#profileTitle").innerText = profile.bio.title;
-
+document.querySelector("#profileEmail").innerText = profile.social[0].facebook;
+document.querySelector("#profilePhone").innerText = profile.social[1].X;
+document.querySelector("#profileLocation").innerText = profile.career.company;
 
 document.querySelector("#profileImage").src = "https://ella.janitorai.com/bot-avatars/KU34fefGAyV8DHnzrefgY.webp?width=400";
 
@@ -49,6 +56,9 @@ document.querySelector("#linkedinLink").title = profile.social[3].linkedIn;
 
 
 document.querySelector(".container p").innerText = profile.bio.about;
+document.querySelector("#description").innerText = profile.education[0].description;
+document.querySelector("#description-b").innerText = profile.education[1].description
+document.querySelector("#description-c").innerText = profile.education[2].description
 
 
 
